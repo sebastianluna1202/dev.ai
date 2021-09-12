@@ -1,0 +1,20 @@
+{
+  "name": "dev.ia",
+  "version": "1.0.0",
+  "description": "Primer proyecto con Tailwind",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss css/tailwind.css -o public/style.css"
+  },
+  "keywords": [
+    "Tailwind",
+    "npm"
+  ],
+  "author": "Sebastián Luna",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^10.3.4",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.11"
+  }
+}
