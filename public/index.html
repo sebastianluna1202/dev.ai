@@ -13,16 +13,16 @@
 <body class="font-display">
     <header class="relative z-10 h-20 flex justify-center sm:justify-between items-center text-white mx-8 md:ml-12 xl:mx-20">
         <p class="font-black text-5xl ">DEV.IA</p>
-        <button class="hidden sm:inline-block border-2 rounded border-white font-semibold p-2">Más Información</button>
+        <button class="hidden sm:inline-block hover:bg-white hover:text-colorPurple border-2 rounded border-white font-semibold px-4 py-3 text-sm">MÁS INFORMACIÓN</button>
     </header>
     <main>
         <div id="hero" class="text-white pt-32" style="height: calc(100vh - 80px); min-height: calc(700px - 80px);">
             <img id="hero-img" class="absolute top-0 h-screen w-screen object-cover filter backdrop-hue-rotate-180" style="min-height: 700px;" src="../assets/hero.jpg" alt="hero background">
             <h1 class="relative w-4/5 xl:w-1/2 mx-auto text-center text-5xl sm:text-6xl md:text-7xl font-semibold">Especialízate en Data Science y AI</h1>
             <h2 class="relative w-4/5 md:w-3/5 mx-auto text-center text-lg font-light xl:font-normal sm:text-xl md:text-2xl mt-8">Aprende los conocimientos y herramientas para manejar datos y obtener respuestas que te ayuden a tomar mejores decisiones en tu organización</h2>
-            <button class="font-semibold text-colorDarkGray bg-white rounded relative block  mx-auto px-4 py-2 mt-9">SOLICITA INFORMACIÓN</button>
+            <button class="hover:bg-colorPurple hover:text-white font-semibold text-colorDarkGray bg-white rounded relative block  mx-auto px-4 py-3 mt-9">SOLICITA INFORMACIÓN</button>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3  bg-colorDarkGray" >
+        <div id="banner" class="grid grid-cols-1 md:grid-cols-3  bg-colorDarkGray" >
             <div class="col-start-1 col-end-3 flex text-white h-20 items-center py-4 text-center md:text-left mx-8 md:ml-12 xl:ml-20 md:mr-10">
                 <p>El salario de un Data Scientist promedio en LATAM es de <b class="text-pink-600 ">$35,000 MXN o $1,600 USD / MES</b></p>
             </div>
@@ -40,7 +40,7 @@
                     <div class="px-2 sm:px-8 py-3 text-center rounded font-semibold bg-colorPink text-white ">PROFESIONAL EN DATA SCIENCE / AI</div>
                     <div class="px-2 sm:px-8 py-3 text-center rounded font-semibold bg-colorLightBlue ">MASTER EN DATA SCIENCE / AI</div>
                 </div>
-                <div id="modules-container" class="mt-12 grid grid-cols-2 sm:grid-cols-3 xs:grid-cols-3 xl:grid-cols-3 gap-4 pb-12">
+                <div id="modules-container" class="mt-12 grid grid-cols-2 sm:grid-cols-3 xs:grid-cols-3 xl:grid-cols-3 gap-4">
                     <div>
                         <p>01</p>
                         <h4 class="tracking-tight font-medium text-xl mt-1">Introducción a la Ciencia de Datos</h4>
@@ -176,10 +176,108 @@
                         <p class="leading-tight text-xs font-medium mt-1 text-gray-400">Backend Developer, Grin.</p>
                     </div>
                 </div>
-                <button class="block border-2 rounded border-white font-semibold p-2 mx-auto text-white">Más historias</button>
+                <button class="hover:bg-white hover:text-colorPurple block border-2 rounded border-white font-semibold py-3 px-4 mx-auto text-white">Más historias</button>
             </div>
         </div>
-        <div id="section-2" class=" bg-colorDarkGray h-screen"></div>
+        <div id="section-2" class=" bg-colorDarkGray text-white px-8 md:px-12 xl:px-20 py-16">
+            <div class="grid grid-cols-3 md:grid-cols-4 gap-8 xl:gap-16">
+                <div class="md:col-start-2">
+                    <h3 class="font-semibold text-xl">Master en Data Science / AI</h3>
+                    <p class=" font-light text-xs text-colorLightBlue">Mensualidades desde:</p>
+                    <p class=" font-semibold text-5xl text-colorLightBlue">$2,999</p>
+                    <p class=" font-light text-xl text-colorLightBlue">MXN</p>
+                </div>
+                <div class=" ">
+                    <h3 class=" font-semibold text-xl">Professional en Data Science / AI</h3>
+                    <p class=" font-light text-xs text-colorPink">Mensualidades desde:</p>
+                    <p class=" font-semibold text-5xl text-colorPink">$3,999</p>
+                    <p class=" font-light text-xl text-colorPink">MXN</p>
+                </div>
+                <div class=" ">
+                    <h3 class=" font-semibold text-xl">Course en Data Science / AI</h3>
+                    <p class=" font-light text-xs text-colorPurple">Mensualidades desde:</p>
+                    <p class=" font-semibold text-5xl text-colorPurple">$4,999</p>
+                    <p class=" font-light text-xl text-colorPurple">MXN</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 md:grid-cols-4 border-b h-auto mt-10 pb-10 gap-8 xl:gap-16 xl:text-xl">
+                <div class="col-start-1 col-end-4 md:col-end-2 flex justify-center text-xl">
+                    <p class="font-semibold">Tiempo</p>
+                </div>
+                <div class="font-semibold md:mt-10">
+                    <p>52 semanas</p>
+                    <p>240 horas de clase</p>
+                </div>
+                <div class="font-semibold md:mt-10">
+                    <p>26 semanas</p>
+                    <p>120 horas de clase</p>
+                </div>
+                <div class="font-semibold md:mt-10">
+                    <p>8 semanas</p>
+                    <p>48 horas de clase</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 md:grid-cols-4 border-b h-auto mt-10 pb-10 gap-8 xl:gap-16 xl:text-xl">
+                <div class="col-start-1 col-end-4 md:col-end-2 flex justify-center text-xl">
+                    <p class="font-semibold text">Diploma</p>
+                </div>
+                <div class="font-light col-start-1 md:col-start-2 col-end-3 md:col-end-4 md:mt-10">
+                    <p>El diploma con rastreo por Blockchain que otorga Dev.f tiene un alto valor en la industria tech en Latinoamérica</p>
+                </div>
+                <div class="font-light md:mt-10">
+                    <p>Diploma electrónico</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 md:grid-cols-4 border-b h-auto mt-10 pb-12 gap-8 xl:gap-16 xl:text-xl">
+                <div class="col-start-1 col-end-4 md:col-end-2 flex justify-center text-xl">
+                    <p class="font-semibold text">Pagos</p>
+                </div>
+                <div class="font-light col-start-1 md:col-start-2 col-end-4 md:col-end-5 md:mt-10">
+                    <p>Contamos con facilidades de pago hasta 12 meses sin intereses pagando con tarjeta de crédito.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 md:grid-cols-4 border-b h-auto mt-10 pb-10 gap-8 xl:gap-16 xl:text-xl">
+                <div class="col-start-1 col-end-4 md:col-end-2 flex justify-center text-xl">
+                    <p class="md:hidden font-semibold text">Soft Skills/Eventos de Comunidad</p>
+                    <p class="hidden md:block font-semibold text">Soft <br> Skills/Eventos <br> de Comunidad</p>
+                </div>
+                <div class="font-light md:mt-10">
+                    <p>Hacker Club</p>
+                    <p>Hackatoncito</p>
+                    <p>Design Sprint</p>
+                </div>
+                <div class="font-light md:mt-10">
+                    <p>Hacker Club</p>
+                    <p>Hackatoncito</p>
+                    <p>Design Sprint</p>
+                </div>
+                <div class="font-light md:mt-10">
+                    <p>Hacker Club</p>
+                    <p>Hackatoncito</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 md:grid-cols-4 border-b h-auto mt-10 pb-10 gap-8 xl:gap-16 xl:text-xl">
+                <div class="col-start-1 col-end-4 md:col-end-2 flex justify-center text-xl">
+                    <p class="font-semibold text">Comunidad</p>
+                </div>
+                <div class="font-light md:mt-10">
+                    <p>Meetups</p>
+                    <p>Hackatoncito</p>
+                    <p>Design Sprint</p>
+                </div>
+                <div class="font-light md:mt-10">
+                    <p>Meetups</p>
+                </div>
+                <div class="font-light md:mt-10">
+                    <p>Meetups</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 md:grid-cols-4 border-b h-auto mt-16 pb-16 gap-8 xl:gap-16 xl:text-xl">
+                <button class="col-start-2 border-4 border-opacity-0 hover:border-opacity-100 border-colorPink bg-colorYellow text-colorDarkGray font-semibold py-2 rounded text-sm">CONTACTA A UN ASESOR</button>
+                <button class="hidden md:block border-4 border-opacity-0 hover:border-opacity-100 border-colorPink bg-colorYellow text-colorDarkGray font-semibold py-2 rounded text-sm">CONTACTA A UN ASESOR</button>
+                <button class="hidden md:block border-4 border-opacity-0 hover:border-opacity-100 border-colorPink bg-colorYellow text-colorDarkGray font-semibold py-2 rounded text-sm">CONTACTA A UN ASESOR</button>
+            </div>
+        </div>
     </main>
     <footer>
     </footer>
