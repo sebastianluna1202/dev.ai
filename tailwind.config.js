@@ -15,7 +15,7 @@ module.exports = {
         'colorLightBlue' : '#76E5FC',
         'colorDarkGray' : '#242433',
         'colorLightGray' : '#F9F9F9',
-        'colorYellow' : '#F6FB15'
+        'colorYellow' : '#98d613'
       }
     }
   },

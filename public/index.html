@@ -11,12 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="font-display">
-    <header class="relative z-10 h-20 flex justify-center sm:justify-between items-center text-white mx-8 md:ml-12 xl:mx-20">
+    <header id="header" class=" sticky duration-1000 top-0 z-10 h-24 flex justify-center sm:justify-between items-center text-white px-8 xl:px-20">
         <p class="font-black text-5xl ">DEV.IA</p>
         <button class="hidden sm:inline-block hover:bg-white hover:text-colorPurple border-2 rounded border-white font-semibold px-4 py-3 text-sm">MÁS INFORMACIÓN</button>
     </header>
     <main>
-        <div id="hero" class="text-white pt-32" style="height: calc(100vh - 80px); min-height: calc(700px - 80px);">
+        <div id="hero" class="text-white pt-32" style="height: calc(100vh - 96px); min-height: calc(700px - 96px);">
             <img id="hero-img" class="absolute top-0 h-screen w-screen object-cover filter backdrop-hue-rotate-180" style="min-height: 700px;" src="../assets/hero.jpg" alt="hero background">
             <h1 class="relative w-4/5 xl:w-1/2 mx-auto text-center text-5xl sm:text-6xl md:text-7xl font-semibold">Especialízate en Data Science y AI</h1>
             <h2 class="relative w-4/5 md:w-3/5 mx-auto text-center text-lg font-light xl:font-normal sm:text-xl md:text-2xl mt-8">Aprende los conocimientos y herramientas para manejar datos y obtener respuestas que te ayuden a tomar mejores decisiones en tu organización</h2>
@@ -35,7 +35,7 @@
             <div id="courseContentContainer" class="mx-8 md:ml-12 xl:ml-20 md:mr-10 mt-8 xl:mt-16 col-start-1 col-end-3 pb-20">
                 <h3 class="text-4xl">Temario</h3>
                 <p class="text-xl font-light mt-4">Todos tenemos tiempos y necesidades de estudio diferentes, es por eso que te ofrecemos tres planes para que elijas el que mejor se adapte a tus necesidades.</p>
-                <div class="grid grid-cols-3 text-xs gap-4 mt-8 items-stretch">
+                <div class="grid grid-cols-3 text-xs xl:text-sm gap-4 mt-8 items-stretch">
                     <div class="px-2 sm:px-8 py-3 text-center rounded font-semibold bg-colorPurple text-white">COURSE EN DATA SCIENCE / AI</div>
                     <div class="px-2 sm:px-8 py-3 text-center rounded font-semibold bg-colorPink text-white ">PROFESIONAL EN DATA SCIENCE / AI</div>
                     <div class="px-2 sm:px-8 py-3 text-center rounded font-semibold bg-colorLightBlue ">MASTER EN DATA SCIENCE / AI</div>
@@ -273,13 +273,14 @@
                 </div>
             </div>
             <div class="grid grid-cols-3 md:grid-cols-4 border-b h-auto mt-16 pb-16 gap-8 xl:gap-16 xl:text-xl">
-                <button class="col-start-2 border-4 border-opacity-0 hover:border-opacity-100 border-colorPink bg-colorYellow text-colorDarkGray font-semibold py-2 rounded text-sm">CONTACTA A UN ASESOR</button>
-                <button class="hidden md:block border-4 border-opacity-0 hover:border-opacity-100 border-colorPink bg-colorYellow text-colorDarkGray font-semibold py-2 rounded text-sm">CONTACTA A UN ASESOR</button>
-                <button class="hidden md:block border-4 border-opacity-0 hover:border-opacity-100 border-colorPink bg-colorYellow text-colorDarkGray font-semibold py-2 rounded text-sm">CONTACTA A UN ASESOR</button>
+                <button class="col-start-2 text-colorYellow hover:text-colorDarkGray border-2 border-colorYellow hover:bg-colorYellow font-semibold px-4 py-3 rounded text-sm justify-self-start">CONTACTA A UN ASESOR</button>
+                <button class="hidden md:block text-colorYellow hover:text-colorDarkGray border-2 border-colorYellow hover:bg-colorYellow font-semibold px-4 py-3 rounded text-sm justify-self-start">CONTACTA A UN ASESOR</button>
+                <button class="hidden md:block text-colorYellow hover:text-colorDarkGray border-2 border-colorYellow hover:bg-colorYellow font-semibold px-4 py-3 rounded text-sm justify-self-start">CONTACTA A UN ASESOR</button>
             </div>
         </div>
     </main>
     <footer>
     </footer>
+    <script src="./index.js"></script>
 </body>
 </html>
