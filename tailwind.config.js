@@ -16,13 +16,12 @@ module.exports = {
         'colorDarkGray' : '#242433',
         'colorLightGray' : '#F9F9F9',
         'colorYellow' : '#98d613'
-      }
+      },
     }
   },
   variants: {
-    extend: {
-      borderColor: ['hover'],
-      
+    extend: { 
+      cursor: ['hover', 'focus'],   
     },
   },
   plugins: [],

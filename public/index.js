@@ -3,11 +3,11 @@ let header = document.querySelector('#header')
 document.addEventListener('scroll', (e)=> {
     lastKnownYScroll = window.scrollY
     if (lastKnownYScroll != 0) {
-        if (header.classList.contains('bg-colorDarkBlue')) {
+        if (header.classList.contains('sm:bg-colorDarkBlue')) {
         } else {
-            header.classList.add('bg-colorDarkBlue')
+            header.classList.add('sm:bg-colorDarkBlue')
         }
     } else {
-        header.classList.remove('bg-colorDarkBlue')
+        header.classList.remove('sm:bg-colorDarkBlue')
     }
 })
