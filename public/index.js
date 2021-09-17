@@ -1,5 +1,5 @@
 let lastKnownYScroll = 0
-let header = document.querySelector('#header')
+let header = document.querySelector('header')
 document.addEventListener('scroll', (e)=> {
     lastKnownYScroll = window.scrollY
     if (lastKnownYScroll != 0) {

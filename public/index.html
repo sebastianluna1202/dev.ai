@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev.ia</title>
+    <title>DEV.AI</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="font-display ">
-    <header id="header" class="relative sm:sticky duration-1000 top-0 z-10 h-24 flex justify-center sm:justify-between items-center text-white px-8 xl:px-20">
-        <p class="font-black text-5xl ">DEV.IA</p>
-        <button class="hidden sm:inline-block hover:bg-white hover:text-colorPurple border-2 rounded border-white font-semibold px-4 py-3 text-sm">MÁS INFORMACIÓN</button>
+<body class="font-display">
+    <header class="relative sm:sticky duration-700 top-0 z-10 h-24 flex justify-center sm:justify-between items-center text-white px-8 xl:px-20">
+        <p class="font-black text-5xl ">DEV.AI</p>
+        <button class="btn hidden sm:inline-block hover:bg-white hover:text-colorPurple border-2 border-white">MÁS INFORMACIÓN</button>
     </header>
     <main>
-        <div id="hero" class="text-white pt-32" style="height: calc(100vh - 96px); min-height: calc(700px - 96px);">
-            <img id="hero-img" class="absolute top-0 h-screen w-screen object-cover filter backdrop-hue-rotate-180" style="min-height: 700px;" src="../assets/hero.jpg" alt="Fondo de la pantalla pricipal">
+        <!-- hero -->
+        <div class="text-white pt-32" style="height: calc(100vh - 96px); min-height: calc(700px - 96px);">
+            <img class="absolute top-0 h-screen w-screen object-cover" style="min-height: 700px;" src="../assets/hero.jpg" alt="Fondo de la pantalla pricipal">
             <h1 class="relative w-4/5 xl:w-1/2 mx-auto text-center text-5xl sm:text-6xl md:text-7xl font-semibold">Especialízate en Data Science y AI</h1>
             <h2 class="relative w-4/5 md:w-3/5 mx-auto text-center text-lg font-light xl:font-normal sm:text-xl md:text-2xl mt-8">Aprende los conocimientos y herramientas para manejar datos y obtener respuestas que te ayuden a tomar mejores decisiones en tu organización</h2>
-            <button class="hover:bg-colorPurple hover:text-white font-semibold text-colorDarkGray bg-white rounded relative block  mx-auto px-4 py-3 mt-9">SOLICITA INFORMACIÓN</button>
+            <button class="btn text-colorDarkGray hover:text-white bg-white hover:bg-colorPurple relative block mx-auto mt-9">SOLICITA INFORMACIÓN</button>
         </div>
         <div id="banner" class="grid grid-cols-1 md:grid-cols-3  bg-colorDarkGray" >
             <div class="col-start-1 col-end-3 flex text-white h-20 items-center py-4 text-center md:text-left mx-8 md:ml-12 xl:ml-20 md:mr-10">
@@ -31,177 +32,188 @@
                 <img class="h-6 " src="../assets/logo-talent.com.png" alt="Logotipo de talent.com">
             </div>
         </div>
-        <div id="section-1" class="inline-block md:grid md:grid-cols-3 md:grid-rows-1 text-colorDarkGray">
-            <div id="courseContentContainer" class="mx-8 md:ml-12 xl:ml-20 md:mr-10 mt-8 xl:mt-16 col-start-1 col-end-3 pb-20">
+        <!-- section-1 -->
+        <div class="inline-block md:grid md:grid-cols-3 md:grid-rows-1 text-colorDarkGray">
+            <!-- course-content-container -->
+            <div class="mx-8 md:ml-12 xl:ml-20 md:mr-12 mt-8 xl:mt-16 col-start-1 col-end-3 pb-20">
                 <h3 class="text-4xl">Temario</h3>
                 <p class="text-xl font-light mt-4">Todos tenemos tiempos y necesidades de estudio diferentes, es por eso que te ofrecemos tres planes para que elijas el que mejor se adapte a tus necesidades.</p>
-                <div class="grid grid-cols-3 text-xs xl:text-sm gap-4 mt-8 items-stretch">
-                    <div class="px-2 sm:px-8 py-3 text-center rounded font-semibold bg-colorPurple text-white">COURSE EN DATA SCIENCE / AI</div>
-                    <div class="px-2 sm:px-8 py-3 text-center rounded font-semibold bg-colorPink text-white ">PROFESIONAL EN DATA SCIENCE / AI</div>
-                    <div class="px-2 sm:px-8 py-3 text-center rounded font-semibold bg-colorLightBlue ">MASTER EN DATA SCIENCE / AI</div>
+                <div class="grid grid-cols-3 text-xs xl:text-sm gap-4 mt-8">
+                    <div class="course bg-colorPurple text-white">COURSE EN DATA SCIENCE / AI</div>
+                    <div class="course bg-colorPink text-white">PROFESIONAL EN DATA SCIENCE / AI</div>
+                    <div class="course bg-colorLightBlue">MASTER EN DATA SCIENCE / AI</div>
                 </div>
-                <div id="modules-container" class="mt-12 grid grid-cols-2 sm:grid-cols-3 xs:grid-cols-3 xl:grid-cols-3 gap-4">
+                <!-- modules-container -->
+                <div class="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 xl:grid-cols-3 gap-4">
                     <div>
                         <p>01</p>
                         <h4 class="tracking-tight font-medium text-xl mt-1">Introducción a la Ciencia de Datos</h4>
                         <div class="flex w-20 mt-1 mb-4 align-middle">
-                            <div class="mr-3 rounded-full w-4 h-4 bg-colorLightBlue "></div>
-                            <div class="mr-3 rounded-full w-4 h-4 bg-colorPink"></div>
-                            <div class=" rounded-full w-4 h-4 bg-colorPurple  "></div>
+                            <div class="course-bullet bg-colorLightBlue mr-3"></div>
+                            <div class="course-bullet bg-colorPink mr-3"></div>
+                            <div class="course-bullet bg-colorPurple"></div>
                         </div>
-                        <p>¿Por qué hacer, cómo hacer y qué es ciencia de datos? <br>
-                            Pandas para importación, limpieza y manipulación de datos <br>
-                            Visualización de datos (gráficas y mapas).</p>
+                        <p>
+                            ¿Por qué hacer, cómo hacer y qué es ciencia de datos?<br>
+                            Pandas para importación, limpieza y manipulación de datos<br>
+                            Visualización de datos (gráficas y mapas).
+                        </p>
                     </div>
                     <div>
                         <p>02</p>
                         <h4 class="tracking-tight font-medium text-xl mt-1">Introducción a la Inteligencia Artificial</h4>
                         <div class="flex w-20 mt-1 mb-4 align-middle">
-                            <div class="mr-3 rounded-full w-4 h-4 bg-colorLightBlue "></div>
-                            <div class="mr-3 rounded-full w-4 h-4 bg-colorPink"></div>
-                            <div class=" rounded-full w-4 h-4 bg-colorPurple  "></div>
+                            <div class="course-bullet bg-colorLightBlue mr-3"></div>
+                            <div class="course-bullet bg-colorPink mr-3"></div>
+                            <div class="course-bullet bg-colorPurple"></div>
                         </div>
-                        <p>¿Cómo implementar AI en tu organización? <br>
-                            Algoritmos de Machine Learning con Python. <br>
-                            Machine Learning en la nube con GCP.</p>
+                        <p>
+                            ¿Cómo implementar AI en tu organización?<br>
+                            Algoritmos de Machine Learning con Python.<br>
+                            Machine Learning en la nube con GCP.
+                        </p>
                     </div>
                     <div>
                         <p>03</p>
                         <h4 class="tracking-tight font-medium text-xl mt-1">Introducción a la Inteligencia Artificial</h4>
                         <div class="flex w-20 mt-1 mb-4 align-middle">
-                            <div class="mr-3 rounded-full w-4 h-4 bg-colorLightBlue "></div>
-                            <div class="mr-3 rounded-full w-4 h-4 bg-colorPink"></div>
-                            <div class="hidden rounded-full w-4 h-4 bg-colorPurple  "></div>
+                            <div class="course-bullet bg-colorLightBlue mr-3"></div>
+                            <div class="course-bullet bg-colorPink mr-3"></div>
                         </div>
-                        <p>Álgebra, Probabilidad y Cálculo. <br>
-                            Teoría de la computación y programacion orientada a objetos. <br>
-                            Lógica, lenguaje y el método científico. <br>
-                            Filosofía de la mente, meditación y neurociencia.</p>
+                        <p>
+                            Álgebra, Probabilidad y Cálculo.<br>
+                            Teoría de la computación y programacion orientada a objetos.<br>
+                            Lógica, lenguaje y el método científico.<br>
+                            Filosofía de la mente, meditación y neurociencia.
+                        </p>
                     </div>
                     <div>
                         <p>04</p>
                         <h4 class="tracking-tight font-medium text-xl mt-1">Data Wrangling</h4>
                         <div class="flex w-20 mt-1 mb-4 align-middle">
-                            <div class="mr-3 rounded-full w-4 h-4 bg-colorLightBlue "></div>
-                            <div class="mr-3 rounded-full w-4 h-4 bg-colorPink"></div>
-                            <div class="hidden rounded-full w-4 h-4 bg-colorPurple  "></div>
+                            <div class="course-bullet bg-colorLightBlue mr-3"></div>
+                            <div class="course-bullet bg-colorPink mr-3"></div>
                         </div>
-                        <p>Adquisición, almacenamiento, limpieza, exploración y análisis de datos. <br>
-                            Extracción, transformación y carga de datos usando Tensorflow. <br>
-                            </p>
+                        <p>
+                            Adquisición, almacenamiento, limpieza, exploración y análisis de datos.<br>
+                            Extracción, transformación y carga de datos usando Tensorflow.<br>
+                        </p>
                     </div>
                     <div>
                         <p>05</p>
                         <h4 class="tracking-tight font-medium text-xl mt-1">Data Visualization</h4>
                         <div class="flex w-20 mt-1 mb-4 align-middle">
-                            <div class="mr-3 rounded-full w-4 h-4 bg-colorLightBlue "></div>
-                            <div class="mr-3 rounded-full w-4 h-4 bg-colorPink"></div>
-                            <div class="hidden rounded-full w-4 h-4 bg-colorPurple  "></div>
+                            <div class="course-bullet bg-colorLightBlue mr-3"></div>
+                            <div class="course-bullet bg-colorPink mr-3"></div>
                         </div>
-                        <p>¿Porqué visualizar datos? <br>
-                            Análisis exploratorio de datos. <br>
-                            Introducción a matplotlib y seaborn.</p>
+                        <p>
+                            ¿Porqué visualizar datos?<br>
+                            Análisis exploratorio de datos.<br>
+                            Introducción a matplotlib y seaborn.
+                        </p>
                     </div>
                     <div>
                         <p>06</p>
                         <h4 class="tracking-tight font-medium text-xl mt-1">Machine Learning</h4>
                         <div class="flex w-20 mt-1 mb-4 align-middle">
-                            <div class="mr-3 rounded-full w-4 h-4 bg-colorLightBlue "></div>
-                            <div class="hidden mr-3 rounded-full w-4 h-4 bg-colorPink"></div>
-                            <div class="hidden rounded-full w-4 h-4 bg-colorPurple  "></div>
+                            <div class="course-bullet bg-colorLightBlue mr-3"></div>
                         </div>
-                        <p>Algoritmos de clasificación, regresiones lineales, polinomiales y logísticas <br>
+                        <p>
+                            Algoritmos de clasificación, regresiones lineales, polinomiales y logísticas <br>
                             Algoritmos supervisados: Árboles de decisión y KNN <br>
-                            Algoritmos no supervisados de Machine Learning: Clustering y reducción de dimensionalidad.</p>
+                            Algoritmos no supervisados de Machine Learning: Clustering y reducción de dimensionalidad.
+                        </p>
                     </div>
                     <div>
                         <p>07</p>
                         <h4 class="tracking-tight font-medium text-xl mt-1">Deep learning</h4>
                         <div class="flex w-20 mt-1 mb-4 align-middle">
-                            <div class="mr-3 rounded-full w-4 h-4 bg-colorLightBlue "></div>
-                            <div class="hidden mr-3 rounded-full w-4 h-4 bg-colorPink"></div>
-                            <div class="hidden rounded-full w-4 h-4 bg-colorPurple  "></div>
+                            <div class="course-bullet bg-colorLightBlue mr-3"></div>
                         </div>
-                        <p>Procesamiento de lenguaje natural. <br>
+                        <p>
+                            Procesamiento de lenguaje natural.<br>
                             Algoritmos de RNN, LSTM. <br>
-                            Redes neuronales convolucionales y visión por computadora.</p>
+                            Redes neuronales convolucionales y visión por computadora.
+                        </p>
                     </div>
                     <div>
                         <p>08</p>
                         <h4 class="tracking-tight font-medium text-xl mt-1">Machine Learning en producción</h4>
                         <div class="flex w-20 mt-1 mb-4 align-middle">
-                            <div class="mr-3 rounded-full w-4 h-4 bg-colorLightBlue "></div>
-                            <div class="hidden mr-3 rounded-full w-4 h-4 bg-colorPink"></div>
-                            <div class="hidden rounded-full w-4 h-4 bg-colorPurple  "></div>
+                            <div class="course-bullet bg-colorLightBlue mr-3"></div>
                         </div>
-                        <p>Google Cloud AI <br>
-                            Mejores prácticas de Machine Learning Operations. <br>
-                            Escenarios avanzados de despliegue.</p>
+                        <p>
+                            Google Cloud AI<br>
+                            Mejores prácticas de Machine Learning Operations.<br>
+                            Escenarios avanzados de despliegue.
+                        </p>
                     </div>
                     <div>
                         <p>09</p>
                         <h4 class="tracking-tight font-medium text-xl mt-1">Get Certified</h4>
                         <div class="flex w-20 mt-1 mb-4 align-middle">
-                            <div class="mr-3 rounded-full w-4 h-4 bg-colorLightBlue "></div>
-                            <div class="hidden mr-3 rounded-full w-4 h-4 bg-colorPink"></div>
-                            <div class="hidden rounded-full w-4 h-4 bg-colorPurple  "></div>
+                            <div class="course-bullet bg-colorLightBlue mr-3"></div>
                         </div>
-                        <p>Cómo prepararse para el exámen de Tensorflow Certified Developer <br>
-                            Entrevistas de prueba y mentoría de preparación para una entrevista de trabajo</p>
+                        <p>
+                            Cómo prepararse para el exámen de Tensorflow Certified Developer<br>
+                            Entrevistas de prueba y mentoría de preparación para una entrevista de trabajo
+                        </p>
                     </div>
                 </div>
             </div>
-            <div id="storiesContainer" class="md:col-start-3 xl:mr-20 md:self-start bg-colorPurple py-12">
-                <div class="bg-white grid grid-cols-1 xl:grid-cols-3 m-8 sm:w-2/3 sm:mx-auto md:mx-8 md:w-auto p-6 md:p-4 rounded-lg shadow-md">
-                   <img class=" w-20 h-20 rounded-full xl:col-start-1 xl:col-end-2 object-cover xl:justify-self-center" src="../assets/Alonso.jpg" alt="Foto de perfil de Alonso">
+            <!-- stories-container -->
+            <div class="md:col-start-3 xl:mr-20 md:self-start bg-colorPurple py-12">
+                <div class="storie-card">
+                   <img class="storie-card_picture" src="../assets/Alonso.jpg" alt="Foto de perfil de Alonso">
                    <div class=" xl:col-start-2 xl:col-end-4">
                        <h4 class="text-xl">Alonso Fernández</h4>
-                       <p class="leading-snug text-sm font-light mt-1 ">Trabajamos con DEV.F porque aporta talento a la comunidad tech y cumple un rol fundamental como catalizador de ideas y colaboración entre desarrolladores de muy distintos perfiles.</p>
+                       <p class="leading-snug text-sm font-light mt-1 ">Trabajamos con DEV.AI porque aporta talento a la comunidad tech y cumple un rol fundamental como catalizador de ideas y colaboración entre desarrolladores de muy distintos perfiles.</p>
                        <p class="leading-tight text-xs font-medium mt-1 text-gray-400">Facebook Strategic Partnerships Manager, Facebook</p>
                    </div>
                 </div>
-                <div class="bg-white grid grid-cols-1 xl:grid-cols-3 m-8 sm:w-2/3 sm:mx-auto md:mx-8 md:w-auto p-6 md:p-4 rounded-lg shadow-md">
-                    <img class=" w-20 h-20 rounded-full xl:col-start-1 xl:col-end-2 object-cover xl:justify-self-center" src="../assets/Melina.png" alt="Foto de perfil de Melina">
+                <div class="storie-card">
+                    <img class="storie-card_picture" src="../assets/Melina.png" alt="Foto de perfil de Melina">
                     <div class=" xl:col-start-2 xl:col-end-4">
                         <h4 class="text-xl">Melina Cruz</h4>
-                        <p class="leading-snug text-sm font-light mt-1 ">Dev.f es un lugar de gente intensa, ñoña en el mejor sentido de la palabra, que les gusta tanto lo que hacen que siempre están buscando más, crecer más y hacer más, es un rush de conocimiento.</p>
+                        <p class="leading-snug text-sm font-light mt-1 ">DEV.AI es un lugar de gente intensa, ñoña en el mejor sentido de la palabra, que les gusta tanto lo que hacen que siempre están buscando más, crecer más y hacer más, es un rush de conocimiento.</p>
                         <p class="leading-tight text-xs font-medium mt-1 text-gray-400">Co-Fundadora y Socia, Homely.</p>
                     </div>
                 </div>
-                <div class="bg-white grid grid-cols-1 xl:grid-cols-3 m-8 sm:w-2/3 sm:mx-auto md:mx-8 md:w-auto p-6 md:p-4 rounded-lg shadow-md">
-                    <img class=" w-20 h-20 rounded-full xl:col-start-1 xl:col-end-2 object-cover xl:justify-self-center" src="../assets/Zura.jpg" alt="Foto de perfil de Zura">
-                    <div class=" xl:col-start-2 xl:col-end-4">
+                <div class="storie-card">
+                    <img class="storie-card_picture" src="../assets/Zura.jpg" alt="Foto de perfil de Zura">
+                    <div class="xl:col-start-2 xl:col-end-4">
                         <h4 class="text-xl">Zura Diaz</h4>
-                        <p class="leading-snug text-sm font-light mt-1 ">Dev.f te da la posibilidad de mejorar tu calidad de vida y crecen tus ambiciones laborales viendo como ex alumnos han conseguido mejores empleos.</p>
+                        <p class="leading-snug text-sm font-light mt-1 ">DEV.AI te da la posibilidad de mejorar tu calidad de vida y crecen tus ambiciones laborales viendo como ex alumnos han conseguido mejores empleos.</p>
                         <p class="leading-tight text-xs font-medium mt-1 text-gray-400">Backend Developer, Grin.</p>
                     </div>
                 </div>
-                <button class="hover:bg-white hover:text-colorPurple block border-2 rounded border-white font-semibold py-3 px-4 mx-auto text-white">Más historias</button>
+                <button class="btn hover:bg-white hover:text-colorPurple block border-2 border-white mx-auto text-white">MÁS HISTORIAS</button>
             </div>
         </div>
-        <div id="section-2" class=" bg-colorDarkGray text-white px-8 md:px-12 xl:px-20 py-16">
+        <!-- section-2 -->
+        <div class=" bg-colorDarkGray text-white px-8 md:px-12 xl:px-20 py-16">
             <div class="grid grid-cols-3 md:grid-cols-4 gap-8 xl:gap-16">
-                <div class="md:col-start-2">
-                    <h3 class="font-semibold text-lg md:text-xl">Master en Data Science / AI</h3>
-                    <p class=" font-light text-xs md:text-sm text-colorLightBlue">Mensualidades desde:</p>
-                    <p class=" font-semibold text-3xl md:text-5xl text-colorLightBlue">$2,999</p>
-                    <p class=" font-light text-xl text-colorLightBlue">MXN</p>
+                <div class="md:col-start-2 text-colorLightBlue">
+                    <h3 class="font-semibold text-lg md:text-xl text-white">Master en Data Science / AI</h3>
+                    <p class="font-light text-xs md:text-sm">Mensualidades desde:</p>
+                    <p class="font-semibold text-3xl md:text-5xl">$2,999</p>
+                    <p class="font-light text-xl">MXN</p>
                 </div>
-                <div class=" ">
-                    <h3 class=" font-semibold text-lg md:text-xl">Professional en Data Science / AI</h3>
-                    <p class=" font-light text-xs md:text-sm text-colorPink">Mensualidades desde:</p>
-                    <p class=" font-semibold text-3xl md:text-5xl text-colorPink">$3,999</p>
-                    <p class=" font-light text-xl text-colorPink">MXN</p>
+                <div class="text-colorPink">
+                    <h3 class="font-semibold text-lg md:text-xl text-white">Professional en Data Science / AI</h3>
+                    <p class="font-light text-xs md:text-sm">Mensualidades desde:</p>
+                    <p class="font-semibold text-3xl md:text-5xl">$3,999</p>
+                    <p class="font-light text-xl">MXN</p>
                 </div>
-                <div class=" ">
-                    <h3 class=" font-semibold text-lg md:text-xl">Course en Data Science / AI</h3>
-                    <p class=" font-light text-xs md:text-sm text-colorPurple">Mensualidades desde:</p>
-                    <p class=" font-semibold text-3xl sm:text-5xl text-colorPurple">$4,999</p>
-                    <p class=" font-light text-xl text-colorPurple">MXN</p>
+                <div class="text-colorPurple">
+                    <h3 class="font-semibold text-lg md:text-xl">Course en Data Science / AI</h3>
+                    <p class="font-light text-xs md:text-sm">Mensualidades desde:</p>
+                    <p class="font-semibold text-3xl sm:text-5xl">$4,999</p>
+                    <p class="font-light text-xl ">MXN</p>
                 </div>
             </div>
             <div class="grid grid-cols-3 md:grid-cols-4 border-b h-auto mt-10 pb-10 gap-8 xl:gap-16 xl:text-xl">
-                <div class="col-start-1 col-end-4 md:col-end-2 flex justify-center text-xl">
+                <div class="col-start-1 col-end-4 md:col-end-2 text-center text-xl">
                     <p class="font-semibold">Tiempo</p>
                 </div>
                 <div class="font-light md:mt-10">
@@ -218,18 +230,18 @@
                 </div>
             </div>
             <div class="grid grid-cols-3 md:grid-cols-4 border-b h-auto mt-10 pb-10 gap-8 xl:gap-16 xl:text-xl">
-                <div class="col-start-1 col-end-4 md:col-end-2 flex justify-center text-xl">
+                <div class="col-start-1 col-end-4 md:col-end-2 text-center text-xl">
                     <p class="font-semibold text">Diploma</p>
                 </div>
                 <div class="font-light col-start-1 md:col-start-2 col-end-3 md:col-end-4 md:mt-10">
-                    <p>El diploma con rastreo por Blockchain que otorga Dev.f tiene un alto valor en la industria tech en Latinoamérica</p>
+                    <p>El diploma con rastreo por Blockchain que otorga DEV.AI tiene un alto valor en la industria tech en Latinoamérica</p>
                 </div>
                 <div class="font-light md:mt-10">
                     <p>Diploma electrónico</p>
                 </div>
             </div>
             <div class="grid grid-cols-3 md:grid-cols-4 border-b h-auto mt-10 pb-12 gap-8 xl:gap-16 xl:text-xl">
-                <div class="col-start-1 col-end-4 md:col-end-2 flex justify-center text-xl">
+                <div class="col-start-1 col-end-4 md:col-end-2 text-center text-xl">
                     <p class="font-semibold text">Pagos</p>
                 </div>
                 <div class="font-light col-start-1 md:col-start-2 col-end-4 md:col-end-5 md:mt-10">
@@ -237,7 +249,7 @@
                 </div>
             </div>
             <div class="grid grid-cols-3 md:grid-cols-4 border-b h-auto mt-10 pb-10 gap-8 xl:gap-16 xl:text-xl">
-                <div class="col-start-1 col-end-4 md:col-end-2 flex justify-center text-xl">
+                <div class="col-start-1 col-end-4 md:col-end-2 text-center text-xl">
                     <p class="md:hidden font-semibold text-center">Soft Skills/Eventos de Comunidad</p>
                     <p class="hidden md:block font-semibold text">Soft <br> Skills/Eventos <br> de Comunidad</p>
                 </div>
@@ -257,7 +269,7 @@
                 </div>
             </div>
             <div class="grid grid-cols-3 md:grid-cols-4 border-b h-auto mt-10 pb-10 gap-8 xl:gap-16 xl:text-xl">
-                <div class="col-start-1 col-end-4 md:col-end-2 flex justify-center text-xl">
+                <div class="col-start-1 col-end-4 md:col-end-2 text-center text-xl">
                     <p class="font-semibold text">Comunidad</p>
                 </div>
                 <div class="font-light md:mt-10">
@@ -273,24 +285,25 @@
                 </div>
             </div>
             <div class="grid grid-cols-3 md:grid-cols-4 border-b h-auto mt-16 pb-16 gap-8 xl:gap-16 xl:text-xl">
-                <button class="col-start-1 col-end-4 mx-auto md:mx-0 md:col-start-2 md:col-end-3 text-colorYellow hover:text-colorDarkGray border-2 border-colorYellow hover:bg-colorYellow font-semibold px-4 py-3 rounded text-sm justify-self-start">CONTACTA A UN ASESOR</button>
-                <button class="hidden md:block text-colorYellow hover:text-colorDarkGray border-2 border-colorYellow hover:bg-colorYellow font-semibold px-4 py-3 rounded text-sm justify-self-start">CONTACTA A UN ASESOR</button>
-                <button class="hidden md:block text-colorYellow hover:text-colorDarkGray border-2 border-colorYellow hover:bg-colorYellow font-semibold px-4 py-3 rounded text-sm justify-self-start">CONTACTA A UN ASESOR</button>
+                <button class="btn col-start-1 md:col-start-2 col-end-4 md:col-end-3 mx-auto md:mx-0 text-colorYellow hover:text-colorDarkGray border-2 border-colorYellow hover:bg-colorYellow justify-self-start">CONTACTA A UN ASESOR</button>
+                <button class="btn hidden md:block text-colorYellow hover:text-colorDarkGray border-2 border-colorYellow hover:bg-colorYellow justify-self-start">CONTACTA A UN ASESOR</button>
+                <button class="btn hidden md:block text-colorYellow hover:text-colorDarkGray border-2 border-colorYellow hover:bg-colorYellow justify-self-start">CONTACTA A UN ASESOR</button>
             </div>
         </div>
-        <div id="preguntasFrecuentes" class="px-8 md:px-12 xl:px-20 py-16 text-colorDarkGray text-xl md:text-2xl ">
+        <!-- frequent-questions -->
+        <div class="px-8 md:px-12 xl:px-20 py-16 text-colorDarkGray text-xl md:text-2xl">
             <h3 class="text-4xl md:text-5xl font-semibold mb-12">Preguntas frecuentes</h3>
             <div class="mb-6">
-                <h4 class=" font-semibold mb-2">¿Qué beneficios obtengo de DEV.F?</h4>
-                <p class="  font-light">Puedes apoyarte en el momento que quieras de nuestros senseis (instructores) para dudas que tengan que ver con tecnología. Variedad de oportunidades de crecimiento profesional o de empleos, muchos de ellos relacionados con tecnología o en empresas innovadoras. Es una comunidad vibrante de gente diversa con ganas de hacer cosas. Con ellos y ellas podrás compartir tus ideas, iniciativas y potenciales proyectos. De DEV.F han salido contrataciones, socios y socias, y nuevas empresas.</p>
+                <h4 class="font-semibold mb-2">¿Qué beneficios obtengo de DEV.AI?</h4>
+                <p class="font-light">Puedes apoyarte en el momento que quieras de nuestros senseis (instructores) para dudas que tengan que ver con tecnología. Variedad de oportunidades de crecimiento profesional o de empleos, muchos de ellos relacionados con tecnología o en empresas innovadoras. Es una comunidad vibrante de gente diversa con ganas de hacer cosas. Con ellos y ellas podrás compartir tus ideas, iniciativas y potenciales proyectos. De DEV.AI han salido contrataciones, socios y socias, y nuevas empresas.</p>
             </div>
             <div class="mb-6">
                 <h4 class="font-semibold mb-2">¿Qué pasa si no puedo asistir a alguna de las clases?</h4>
-                <p class="  font-light">No te preocupes, tenemos recursos grabados que podrás consultar después para que puedas estar al corriente.</p>
+                <p class="font-light">No te preocupes, tenemos recursos grabados que podrás consultar después para que puedas estar al corriente.</p>
             </div>
             <div class="mb-6">
-                <h4 class=" font-semibold mb-2">¿Qué incluye mi acceso al curso?</h4>
-                <ol class=" ml-12  font-light list-decimal">
+                <h4 class="font-semibold mb-2">¿Qué incluye mi acceso al curso?</h4>
+                <ol class="ml-12 font-light list-decimal">
                     <li>ASESORÍAS:Podrás agendar asesorías personales con tu sensei para resolver dudas o reforzar temas específicos.</li>
                     <li>TU PROPIO PORTAFOLIO : Aprenderás a crear tu propio portafolio a lo largo de cada uno de los ejercicios y entregas, lo que te ayudará a la hora de las entrevistas de trabajo.</li>
                     <li>La comunidad más grande y vibrante de LATAM: Compartirás el aula virtual con alumnos de México, Colombia, Panamá, El Salvador, Guatemala, Costa Rica, Ecuador, República Dominicana y más países de Latinoamérica y el mundo.</li>
@@ -299,9 +312,9 @@
             </div>
             <div class="grid md:grid-cols-2 mb-6">
                 <div>
-                    <h4 class=" font-semibold mb-2">¿Qué necesito para tomar clases?</h4>
-                    <p class=" font-light">Un equipo de computo con las siguientes características:</p>
-                    <ol class=" ml-12 font-light list-disc">
+                    <h4 class="font-semibold mb-2">¿Qué necesito para tomar clases?</h4>
+                    <p class="font-light">Un equipo de computo con las siguientes características:</p>
+                    <ol class="ml-12 font-light list-disc">
                         <li>8 GB RAM</li>
                         <li>5 GB libres en disco duro</li>
                         <li>Procesador superior a Intel Pentium</li>
@@ -316,41 +329,39 @@
                 <div></div>
             </div>   
         </div>
+        <!-- separator -->
         <div class="grid grid-cols-4 grid-rows-1 w-full">
             <img class="col-start-1 col-end-3 row-start-1 w-full h-full " src="../assets/Vector2_preguntas-frecuentes.svg" alt="Diseño de página">
             <img class="col-start-1 col-end-5 row-start-1 w-full h-full " src="../assets/Vector1_preguntas-frecuentes.svg" alt="Diseño de página">
         </div>
     </main>
-    <footer class="bg-black -my-2 relative">
-        <div class="grid grid-cols-1 md:grid-cols-2 px-8 md:px-12 xl:px-20 py-16 ">
+    <footer class="bg-black -mt-2 relative">
+        <div class="grid grid-cols-1 md:grid-cols-2 px-8 md:px-12 xl:px-20 py-16">
             <div class=" flex justify-center md:justify-start gap-4 text-white font-semibold py-3">
-                <p class="hover:text-colorPurple cursor-pointer text-center " >Cursos</p>
+                <p class="hover:text-colorPurple cursor-pointer text-center" >Cursos</p>
                 <p class="hover:text-colorPurple cursor-pointer text-center">Términos y condiciones</p>
                 <p class="hover:text-colorPurple cursor-pointer text-center">Aviso de privacidad</p>
             </div>
             <div>
-                <p class="row-start-2 text-colorYellow text-lg text-center md:text-right py-3 ">
-                    HACKING LATAM SINCE 2014
-                </p>
+                <p class="text-colorYellow text-lg text-center md:text-right py-3">HACKING LATAM SINCE 2014</p>
             </div>
             <div class="flex justify-center md:justify-start gap gap-4 py-3 ">
-                <img class="h-8 w-8 cursor-pointer " src="../assets/Youtube-icon.svg" alt="Icono de youtube">
-                <img class="h-8 w-8 cursor-pointer " src="../assets/Twitter-icon.svg" alt="Icono de twitter">
-                <img class="h-8 w-8 cursor-pointer " src="../assets/Instagram-icon.svg" alt="Icono de instagram">
-                <img class="h-8 w-8 cursor-pointer " src="../assets/facebook-icon.svg" alt="Icono de facebook">
+                <img class="h-8 w-8 cursor-pointer" src="../assets/Youtube-icon.svg" alt="Icono de youtube">
+                <img class="h-8 w-8 cursor-pointer" src="../assets/Twitter-icon.svg" alt="Icono de twitter">
+                <img class="h-8 w-8 cursor-pointer" src="../assets/Instagram-icon.svg" alt="Icono de instagram">
+                <img class="h-8 w-8 cursor-pointer" src="../assets/facebook-icon.svg" alt="Icono de facebook">
             </div>
             <div class="row-start-3 md:row-start-2 md:col-start-2 flex gap-1  justify-center md:justify-end py-3 ">
-                <img class="h-6 w-12 xl:h-8 xl:w-16" src="../assets/flag-1.svg" alt="Bandera de México">
-                <img class="h-6 w-12 xl:h-8 xl:w-16" src="../assets/flag-2.svg" alt="Bandera de Argentina">
-                <img class="h-6 w-12 xl:h-8 xl:w-16" src="../assets/flag-3.svg" alt="Bandera de Colombia">
-                <img class="h-6 w-12 xl:h-8 xl:w-16" src="../assets/flag-5.svg" alt="Bandera de Guatemala">
-                <img class="h-6 w-12 xl:h-8 xl:w-16" src="../assets/flag-6.svg" alt="Bandera de El Salvador">
-                <img class="h-6 w-12 xl:h-8 xl:w-16" src="../assets/flag-7.svg" alt="Bandera de Perú">
-                <img class="h-6 w-12 xl:h-8 xl:w-16" src="../assets/flag-8.svg" alt="Bandera de Panamá">
+                <img class="flag" src="../assets/flag-1.svg" alt="Bandera de México">
+                <img class="flag" src="../assets/flag-2.svg" alt="Bandera de Argentina">
+                <img class="flag" src="../assets/flag-3.svg" alt="Bandera de Colombia">
+                <img class="flag" src="../assets/flag-5.svg" alt="Bandera de Guatemala">
+                <img class="flag" src="../assets/flag-6.svg" alt="Bandera de El Salvador">
+                <img class="flag" src="../assets/flag-7.svg" alt="Bandera de Perú">
+                <img class="flag" src="../assets/flag-8.svg" alt="Bandera de Panamá">
             </div>
-            <p class=" md:col-start-1 md:col-end-3 text-sm font-light text-white py-4 ">Dev.f ofrece una solución innovadora a la inclusión educativa con programas EdTech que ayudan a las personas a convertirse en desarrolladores de software y a obtener habilidades tecnológicas para así conseguir oportunidades laborales de alta calidad de manera ágil y accesible.</p>
+            <p class="md:col-start-1 md:col-end-3 text-sm font-light text-white py-4 ">DEV.AI ofrece una solución innovadora a la inclusión educativa con programas EdTech que ayudan a las personas a convertirse en desarrolladores de software y a obtener habilidades tecnológicas para así conseguir oportunidades laborales de alta calidad de manera ágil y accesible.</p>
         </div>
-
     </footer>
     <script src="./index.js"></script>
 </body>
